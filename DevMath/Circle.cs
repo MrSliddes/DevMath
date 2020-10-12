@@ -20,7 +20,10 @@ namespace DevMath
 
         public bool CollidesWith(Circle circle)
         {
-            throw new NotImplementedException();
+            var dx = circle.Position.x - this.Position.x;
+            var dy = circle.Position.y - this.Position.y;
+            var dist = Math.Sqrt(dx * dx + dy * dy);
+            return dist < circle.Radius + Radius;
         }
     }
 }

@@ -17,7 +17,12 @@ namespace DevMath
 
         public static Matrix4x4 Identity
         {
-            get { throw new NotImplementedException(); }
+            get { return new Matrix4x4(
+                    1, 0, 0, 0,
+                    0, 1, 0, 0,
+                    0, 0, 1, 0,
+                    0, 0, 0, 1
+                    ); }
         }
 
         public float Determinant

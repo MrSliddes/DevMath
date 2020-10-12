@@ -8,6 +8,8 @@ namespace DevMath
 {
     public class Line
     {
+        // Hier niks doen?
+
         public Vector2 Position
         {
             get; set;
@@ -20,7 +22,12 @@ namespace DevMath
 
         public float Length
         {
-            get; set;
+            get
+            {
+                //https://www.varsitytutors.com/sat_math-help/how-to-find-the-length-of-a-line-with-distance-formula;
+            }
+
+            set;
         }
     }
 }
